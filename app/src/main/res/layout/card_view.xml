@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:background="@drawable/gradient_foreground"
+        android:layout_height="match_parent"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:gravity="center"
+        android:layout_margin="16dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:letterSpacing="-0.02"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:letterSpacing="0.02"
+                android:lineSpacingExtra="3.3sp"
+                android:text="Alive"
+                android:textColor="@color/white"
+                android:textSize="13sp"
+                android:textStyle="normal" />
+
+            <TextView
+                android:id="@+id/locationName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:letterSpacing="0.02"
+                android:lineSpacingExtra="3.3sp"
+                android:text="Ankara"
+                android:textColor="@color/white"
+                android:textSize="13sp"
+                android:textStyle="normal" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</FrameLayout>
